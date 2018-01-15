@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E8A238D200CE6470086454E /* GistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8A238B200CE6460086454E /* GistTests.swift */; };
+		1E8A2393200CFC310086454E /* GistModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8A2392200CFC310086454E /* GistModelTest.swift */; };
+		1E9F2F83200D06CA00A370A8 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EFDCA01FBD0F5A00A35768 /* File.swift */; };
+		1E9F2F84200D06F600A370A8 /* GistsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A042A7F61FBCDAFA00C387F7 /* GistsViewModel.swift */; };
+		1E9F2F85200D06FE00A370A8 /* GistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A042A7FD1FBCE69200C387F7 /* GistCell.swift */; };
+		1E9F2F86200D070900A370A8 /* GistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0057ABA1FBD2BEE00547012 /* GistDetailViewController.swift */; };
+		1E9F2F87200D072500A370A8 /* ApiLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A042A7F81FBCE1D200C387F7 /* ApiLimit.swift */; };
+		1E9F2F88200D075C00A370A8 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A042A7FA1FBCE5F000C387F7 /* UITableViewCell+Extension.swift */; };
+		1E9F2F89200D075C00A370A8 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A042A7FF1FBCEA4A00C387F7 /* UIViewController+Extension.swift */; };
+		1E9F2F8A200D07CB00A370A8 /* LocalDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA2E5B200AC69F00A41CEA /* LocalDataBase.swift */; };
+		1E9F2F8F200D094200A370A8 /* MockedGists.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E9F2F8E200D094200A370A8 /* MockedGists.json */; };
+		1E9F2F90200D094200A370A8 /* MockedGists.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E9F2F8E200D094200A370A8 /* MockedGists.json */; };
 		A0057ABB1FBD2BEE00547012 /* GistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0057ABA1FBD2BEE00547012 /* GistDetailViewController.swift */; };
 		A042A7F71FBCDAFA00C387F7 /* GistsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A042A7F61FBCDAFA00C387F7 /* GistsViewModel.swift */; };
 		A042A7F91FBCE1D200C387F7 /* ApiLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A042A7F81FBCE1D200C387F7 /* ApiLimit.swift */; };
 		A042A7FB1FBCE5F000C387F7 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A042A7FA1FBCE5F000C387F7 /* UITableViewCell+Extension.swift */; };
 		A042A7FE1FBCE69200C387F7 /* GistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A042A7FD1FBCE69200C387F7 /* GistCell.swift */; };
 		A042A8001FBCEA4A00C387F7 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A042A7FF1FBCEA4A00C387F7 /* UIViewController+Extension.swift */; };
-		A066ECAB1FBA6E6C004255B2 /* GistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066ECAA1FBA6E6C004255B2 /* GistTests.swift */; };
 		A066ECB61FBA6E6C004255B2 /* GistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066ECB51FBA6E6C004255B2 /* GistUITests.swift */; };
 		A066ECD01FBA6F9A004255B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066ECC51FBA6F9A004255B2 /* AppDelegate.swift */; };
 		A066ECD11FBA6F9A004255B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066ECC51FBA6F9A004255B2 /* AppDelegate.swift */; };
@@ -60,6 +71,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E8A238B200CE6460086454E /* GistTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GistTests.swift; sourceTree = "<group>"; };
+		1E8A2392200CFC310086454E /* GistModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistModelTest.swift; sourceTree = "<group>"; };
+		1E9F2F8E200D094200A370A8 /* MockedGists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockedGists.json; sourceTree = "<group>"; };
 		A0057ABA1FBD2BEE00547012 /* GistDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailViewController.swift; sourceTree = "<group>"; };
 		A042A7F61FBCDAFA00C387F7 /* GistsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsViewModel.swift; sourceTree = "<group>"; };
 		A042A7F81FBCE1D200C387F7 /* ApiLimit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLimit.swift; sourceTree = "<group>"; };
@@ -68,7 +82,6 @@
 		A042A7FF1FBCEA4A00C387F7 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		A066EC921FBA6E6B004255B2 /* Gist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A066ECA61FBA6E6C004255B2 /* GistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A066ECAA1FBA6E6C004255B2 /* GistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistTests.swift; sourceTree = "<group>"; };
 		A066ECAC1FBA6E6C004255B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A066ECB11FBA6E6C004255B2 /* GistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A066ECB51FBA6E6C004255B2 /* GistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistUITests.swift; sourceTree = "<group>"; };
@@ -114,6 +127,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E8A238A200CE6460086454E /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E8A238B200CE6460086454E /* GistTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		1E8A238F200CFBE10086454E /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E9F2F8E200D094200A370A8 /* MockedGists.json */,
+				1E8A2392200CFC310086454E /* GistModelTest.swift */,
+			);
+			path = ModelTests;
+			sourceTree = "<group>";
+		};
 		A0057AB91FBD2BD400547012 /* GistDetailViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,7 +183,8 @@
 		A066ECA91FBA6E6C004255B2 /* GistTests */ = {
 			isa = PBXGroup;
 			children = (
-				A066ECAA1FBA6E6C004255B2 /* GistTests.swift */,
+				1E8A238A200CE6460086454E /* ViewModelTests */,
+				1E8A238F200CFBE10086454E /* ModelTests */,
 				A066ECAC1FBA6E6C004255B2 /* Info.plist */,
 			);
 			path = GistTests;
@@ -396,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A066ECD21FBA6F9A004255B2 /* LaunchScreen.storyboard in Resources */,
+				1E9F2F8F200D094200A370A8 /* MockedGists.json in Resources */,
 				A066ECD41FBA6F9A004255B2 /* Main.storyboard in Resources */,
 				A066ECD81FBA6F9A004255B2 /* Assets.xcassets in Resources */,
 			);
@@ -409,6 +441,7 @@
 				A066ECD51FBA6F9A004255B2 /* Main.storyboard in Resources */,
 				A066ECD91FBA6F9A004255B2 /* Assets.xcassets in Resources */,
 				A066ECD71FBA6F9A004255B2 /* Info.plist in Resources */,
+				1E9F2F90200D094200A370A8 /* MockedGists.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,12 +484,21 @@
 			files = (
 				A066ECDE1FBA71EE004255B2 /* BaseAPI.swift in Sources */,
 				A066ECED1FBA7AE0004255B2 /* Owner.swift in Sources */,
+				1E8A2393200CFC310086454E /* GistModelTest.swift in Sources */,
+				1E9F2F86200D070900A370A8 /* GistDetailViewController.swift in Sources */,
 				A066ECD11FBA6F9A004255B2 /* AppDelegate.swift in Sources */,
+				1E9F2F8A200D07CB00A370A8 /* LocalDataBase.swift in Sources */,
+				1E9F2F83200D06CA00A370A8 /* File.swift in Sources */,
+				1E9F2F85200D06FE00A370A8 /* GistCell.swift in Sources */,
 				A066ECE71FBA75ED004255B2 /* Gist.swift in Sources */,
 				A066ECE11FBA7229004255B2 /* Error+Extension.swift in Sources */,
+				1E9F2F88200D075C00A370A8 /* UITableViewCell+Extension.swift in Sources */,
+				1E9F2F89200D075C00A370A8 /* UIViewController+Extension.swift in Sources */,
+				1E9F2F87200D072500A370A8 /* ApiLimit.swift in Sources */,
+				1E9F2F84200D06F600A370A8 /* GistsViewModel.swift in Sources */,
 				A066ECEA1FBA79C1004255B2 /* Result.swift in Sources */,
 				A066ECF11FBA7D1C004255B2 /* GistsViewController.swift in Sources */,
-				A066ECAB1FBA6E6C004255B2 /* GistTests.swift in Sources */,
+				1E8A238D200CE6470086454E /* GistTests.swift in Sources */,
 				A066ECE41FBA7457004255B2 /* GistsRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

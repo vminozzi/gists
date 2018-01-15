@@ -16,7 +16,7 @@ struct Gist: Mappable {
     
     var id = ""
     var owner: Owner?
-    var files: FileMinozzi?
+    var files: File?
     
     init?(data: Data) {
         

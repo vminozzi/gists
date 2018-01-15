@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct FileMinozzi: Mappable {
+struct File: Mappable {
     
     var fileList: FileList?
     
@@ -25,12 +25,11 @@ struct FileMinozzi: Mappable {
     }
     
     func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: Whatever.self)
-        
+        var container = encoder.container(keyedBy: FileKeys.self)
         try container.encode(fileList, forKey: .fileList)
     }
     
-    fileprivate enum Whatever: String, CodingKey {
+    fileprivate enum FileKeys: String, CodingKey {
         case fileList
     }
 
@@ -48,7 +47,7 @@ struct FileMinozzi: Mappable {
         }
     }
     
-    static func ==(lhs: FileMinozzi, rhs: FileMinozzi) -> Bool {
+    static func ==(lhs: File, rhs: File) -> Bool {
         return lhs.fileList == rhs.fileList
     }
 }

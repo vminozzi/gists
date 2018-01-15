@@ -39,8 +39,8 @@ struct GistDTO {
 class GistsViewModel: GistsDelegate {
     
     private var shouldLoadMore = true
-    private var gists = [Gist]()
-    private var favorites = [Gist]()
+    var gists = [Gist]()
+    var favorites = [Gist]()
     private var page = 0
     private var cache = NSCache<NSString, UIImage>()
     
