@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 protocol LoadContent: class {
     func didLoadContent(error: String?)
@@ -117,6 +118,9 @@ class GistsViewModel: GistsDelegate {
     }
     
     func didFavorite(with id: String, shouldFavorite: Bool) {
+        let pop = SystemSoundID(1520)
+        AudioServicesPlaySystemSound(pop)
+        
         let array = gists.filter { id == $0.id }
         guard let gist = array.first else {
             return
