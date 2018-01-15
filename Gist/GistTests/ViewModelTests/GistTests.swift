@@ -31,25 +31,21 @@ class GistTests: XCTestCase {
     
     func testShouldValidateGistDTO() {
         let gistDTO = viewModel?.gistDTO(at: 0)
+        XCTAssert(gistDTO?.id ?? "" == "7928dfbfdbf6bd2c5deb01e008730e19")
         XCTAssertNotNil(gistDTO)
     }
     
     func testShouldValidateGistDetailDTO() {
         let detailDTO = viewModel?.getDetailDTO(identifier: "", row: 0)
+        XCTAssert(detailDTO?.name ?? "" == "ko1")
         XCTAssertNotNil(detailDTO)
     }
     
-    func testShouldValidateGistAddFavorite() {
-        viewModel?.didFavorite(with: "7928dfbfdbf6bd2c5deb01e008730e19", shouldFavorite: true)
-        XCTAssertTrue(viewModel?.favorites.count ?? 0 > 0)
-    }
-    
-    func testShouldValidateLoadFavorites() {
-        viewModel?.getFavorites()
-        XCTAssertTrue(viewModel?.favorites.count ?? 0 > 0)
-    }
-    
     func testShouldValidateCheckFavorite() {
-        XCTAssertTrue(viewModel?.isFavorite(id: "7928dfbfdbf6bd2c5deb01e008730e19") == true)
+        guard let favorite = viewModel?.gists[0], let model = viewModel else {
+            return
+        }
+        viewModel?.favorites.append(favorite)
+        XCTAssert(model.isFavorite(id: "7928dfbfdbf6bd2c5deb01e008730e19"))
     }
 }
